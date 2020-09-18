@@ -80,12 +80,12 @@ collections:
               - {label: Content, name: content, widget: string}
       - label: 'Blog Page'
         name: 'blog_main'
-        file: 'content/blog.json'
+        file: 'content/blog_main.json'
         fields:
           - {label: Title, name: title, widget: string, required: true}
       - label: 'Recipe Page'
         name: 'recipe_main'
-        file: 'content/recipe.json'
+        file: 'content/recipe_main.json'
         fields:
           - {label: Title, name: title, widget: string, required: true}
       - label: 'Contact Page'

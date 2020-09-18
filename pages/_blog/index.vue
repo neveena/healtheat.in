@@ -3,7 +3,7 @@
     <div class="jumbotron jumbotron-fluid">
       <b-container>
         <h1 class="font-weight-bold">
-          Blog
+          Blog {{ page }}
         </h1>
       </b-container>
     </div>
@@ -12,7 +12,7 @@
         <b-row>
           <b-col v-for="(post,index) in posts" :key="index" md="6" lg="4" class="mb-5">
             <div class="card">
-              <div class="image-wrapper">
+              <div class="image-wrapper" :style="{ backgroundImage: `url(${post.thumbnail})`}">
                 <img class="card-img-top" :src="post.thumbnail" alt="Nuts & Dried fruits">
               </div>
               <div class="card-body">
@@ -22,7 +22,7 @@
                 <p class="card-text">
                    {{ post.description }}
                 </p>
-                <nuxt-link :to="{ name: 'blog-detail', params: { detail: post.slug }}" class="btn btn-secondary">View</nuxt-link>
+                <nuxt-link :to="{ name: 'blog-detail', params: { detail: post.slug }}" class="link">Read more</nuxt-link>
               </div>
             </div>
           </b-col>
@@ -36,7 +36,7 @@
 export default {
   async asyncData ({ $content }) {
     const posts = await $content('blog').fetch()
-    const page = await $content('home').fetch()
+    const page = await $content('blog_main').fetch()
     return {
       posts,
       page
@@ -83,5 +83,29 @@ export default {
 
 .card {
   height: 100%;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.09);
+  }
+}
+
+.image-wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  img {
+    display: none;
+  }
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.link {
+  color: $secondary;
+  font-weight: 700;
 }
 </style>
