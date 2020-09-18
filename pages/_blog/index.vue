@@ -36,9 +36,10 @@
 export default {
   async asyncData ({ $content }) {
     const posts = await $content('blog').fetch()
-
+    const page = await $content('home').fetch()
     return {
-      posts
+      posts,
+      page
     }
   }
 }
