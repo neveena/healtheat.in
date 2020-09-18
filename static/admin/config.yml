@@ -69,8 +69,8 @@ collections:
         name: 'about'
         file: 'content/about.json'
         fields:
-          - {label: Title, name: title, widget: string, tagname: h2 }
-          - {label: 'Intro heading', name: intro, widget: text, tagname: p }
+          - {label: Title, name: title, widget: string, tagname: h1 }
+          - {label: 'Intro heading', name: intro, widget: text, tagname: h2 }
           - {label: 'Intro content', name: intro_content, widget: text, tagname: p }
           - label: Block
             name: block

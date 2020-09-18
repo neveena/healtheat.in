@@ -11,7 +11,7 @@
       <b-container>
         <h2>{{ page.intro }}</h2>
         <p>
-          Often all it takes is making a few small changes to reap the huge benefits of life. At HealthEat.in, this is our first step in making you feel fabulous and be the best version of you. A Dry fruit Mocktail before your workout, making that healthy dessert for your someone special or beating those odd hour cravings, we've got you covered.
+          {{ page.intro_content }}
         </p>
       </b-container>
     </div>
