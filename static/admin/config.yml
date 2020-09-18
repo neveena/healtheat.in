@@ -62,12 +62,6 @@ collections:
           - {label: 'How it works section(paragraph 2)', name: how_it_works_para_2, widget: string }
           - {label: 'Social section (Title)', name: social_title, widget: string, required: true }
           - {label: 'Social section(Subtitle)', name: social_subtitle, widget: string, required: true }
-          - label: Block
-            name: block
-            widget: list
-            fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Content, name: content, widget: string}
       - label: 'About Page'
         name: 'about'
         file: 'content/about.json'
