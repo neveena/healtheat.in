@@ -20,7 +20,9 @@
         <b-row>
           <b-col v-for="(blk, index) in page.block" :key="index" md="6" class="mb-4">
             <h4>{{ blk.title }}</h4>
-            <p>{{ blk.content }}</p>
+            <!-- {{ blk.content }} -->
+            <nuxt-content :document="page" />
+            <p v-html="blk.content" class="content" />
           </b-col>
           <!-- <b-col md="6" class="mb-4">
             <h4>Stay Connected</h4>
