@@ -26,3 +26,8 @@ collections:
           widget: 'image',
           required: true,
         }
+      - {
+          label: 'Image',
+          name: 'large_image',
+          widget: 'image'
+        }

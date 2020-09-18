@@ -1,15 +1,28 @@
 <template>
   <div class="content">
     <b-container>
-      <h1>Lorem ipsum dolor sit amet,</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel consequat dui. Integer mattis blandit scelerisque. Nulla vitae varius quam. Sed mauris ex, ullamcorper non metus a, fermentum ultricies nunc. Donec a nulla neque. Sed sem enim, dignissim nec tellus id, ultrices pellentesque nulla. Donec sagittis justo id ipsum gravida rutrum quis eget augue. Sed a vehicula dui. Duis finibus feugiat enim, eu ultricies nibh hendrerit in. Proin elementum, massa sed gravida hendrerit, turpis tellus lacinia purus, eu venenatis mi urna non leo. Donec ultrices imperdiet ligula. Ut id sapien a ligula tincidunt aliquet. Donec lacinia faucibus libero vel vestibulum. Proin eu turpis maximus elit tristique sodales.</p>
+      <h1>{{ post.title }}</h1>
+      <div v-if="post.large_image">
+        <img :src="post.large_image" class="img-fluid rounded">
+      </div>
+      <div v-html="post.body" class="mt-4 detail" />
     </b-container>
   </div>
 </template>
 
 <script>
 export default {
-  components: {
+  async asyncData ({ $content, params, error }) {
+    let post
+    try {
+      post = await $content('blog', params.detail).fetch()
+    } catch (e) {
+      error({ message: 'Blog Post not found' })
+    }
+
+    return {
+      post
+    }
   }
 }
 </script>
@@ -19,9 +32,10 @@ export default {
 }
 h1 {
   color: $secondary;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  font-weight: 900;
 }
-p {
+.detail p {
   font-size: 18px;
   line-height: 1.7;
 }

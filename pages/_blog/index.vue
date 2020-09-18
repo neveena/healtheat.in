@@ -10,67 +10,19 @@
     <div class="blog-list">
       <b-container>
         <b-row>
-          <b-col md="6" lg="4" class="mb-5">
+          <b-col v-for="(post,index) in posts" :key="index" md="6" lg="4" class="mb-5">
             <div class="card">
               <div class="image-wrapper">
-                <img class="card-img-top" src="/img/12.jpg" alt="Nuts & Dried fruits">
+                <img class="card-img-top" :src="post.thumbnail" alt="Nuts & Dried fruits">
               </div>
               <div class="card-body">
                 <h5 class="card-title">
-                  Blog_1
+                  {{ post.title }}
                 </h5>
                 <p class="card-text">
-                  Organically sourced and procured from the origin.
+                   {{ post.description }}
                 </p>
-                <a href="#" class="btn btn-secondary">View detail</a>
-              </div>
-            </div>
-          </b-col>
-          <b-col md="6" lg="4" class="mb-5">
-            <div class="card">
-              <div class="image-wrapper">
-                <img class="card-img-top" src="/img/12.jpg" alt="Nuts & Dried fruits">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">
-                  Blog_1
-                </h5>
-                <p class="card-text">
-                  Organically sourced and procured from the origin.
-                </p>
-                <a href="#" class="btn btn-secondary">View detail</a>
-              </div>
-            </div>
-          </b-col>
-          <b-col md="6" lg="4" class="mb-5">
-            <div class="card">
-              <div class="image-wrapper">
-                <img class="card-img-top" src="/img/12.jpg" alt="Nuts & Dried fruits">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">
-                  Blog_1
-                </h5>
-                <p class="card-text">
-                  Organically sourced and procured from the origin.
-                </p>
-                <a href="#" class="btn btn-secondary">View detail</a>
-              </div>
-            </div>
-          </b-col>
-          <b-col md="6" lg="4" class="mb-5">
-            <div class="card">
-              <div class="image-wrapper">
-                <img class="card-img-top" src="/img/12.jpg" alt="Nuts & Dried fruits">
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">
-                  Blog_1
-                </h5>
-                <p class="card-text">
-                  Organically sourced and procured from the origin.
-                </p>
-                <a href="#" class="btn btn-secondary">View detail</a>
+                <nuxt-link :to="{ name: 'blog-detail', params: { detail: post.slug }}" class="btn btn-secondary">View</nuxt-link>
               </div>
             </div>
           </b-col>
@@ -82,7 +34,12 @@
 
 <script>
 export default {
-  components: {
+  async asyncData ({ $content }) {
+    const posts = await $content('blog').fetch()
+
+    return {
+      posts
+    }
   }
 }
 </script>
