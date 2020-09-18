@@ -42,7 +42,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <span>Copyright © 2020, All Right Reserved HealthEat.in</span>
+            <span>Copyright © {{ getYear }}, All Right Reserved HealthEat.in</span>
           </div>
           <div class="col-md-6 text-right">
             <span><a href="http://neveenaferrao.netlify.app/" target="_blank">Designed by: neveena</a></span>
@@ -61,6 +61,12 @@ export default {
   components: {
     Call,
     Map
+  },
+  computed: {
+    getYear () {
+      const currentDate = new Date()
+      return currentDate.getFullYear()
+    }
   }
 }
 </script>
