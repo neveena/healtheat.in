@@ -69,15 +69,15 @@ collections:
         name: 'about'
         file: 'content/about.json'
         fields:
-          - {label: Title, name: title, widget: string, tagname: h1 }
-          - {label: 'Intro heading', name: intro, widget: text, tagname: h2 }
-          - {label: 'Intro content', name: intro_content, widget: text, tagname: p }
+          - {label: Title, name: title, widget: string }
+          - {label: 'Intro heading', name: intro, widget: text }
+          - {label: 'Intro content', name: intro_content, widget: text }
           - label: Block
             name: block
             widget: list
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: Content, name: content, widget: text}
+              - {label: Content, name: content, widget: markdown, buttons: ['bold', 'italic', 'link', 'heading-four', 'heading-five', 'heading-six', 'quote']}
       - label: 'Blog Page'
         name: 'blog_main'
         file: 'content/blog_main.json'

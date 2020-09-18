@@ -18,7 +18,11 @@
     <div class="block">
       <b-container>
         <b-row>
-          <b-col md="6" class="mb-4">
+          <b-col v-for="(blk, index) in page.block" :key="index" md="6" class="mb-4">
+            <h4>{{ blk.title }}</h4>
+            <p>{{ blk.content }}</p>
+          </b-col>
+          <!-- <b-col md="6" class="mb-4">
             <h4>Stay Connected</h4>
             <p>
               Our goal is to keep you plugged into the health scene so you can always reach out to us or WhatsApp on <a href="tel:9886090888">9886090888</a>. Check back often to find what offers we have for you. Also, be sure to follow us on our Instagram channel and Facebook page.
@@ -29,7 +33,7 @@
             <p>
               We are taking it slow on this due to Covid  situation. Hence taking orders via call and through Whatsapp to maintain atmost safety.
             </p>
-          </b-col>
+          </b-col> -->
         </b-row>
       </b-container>
     </div>
