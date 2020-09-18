@@ -3,7 +3,7 @@
     <div class="jumbotron jumbotron-fluid">
       <b-container>
         <h1 class="font-weight-bold">
-          Blog {{ page }}
+          {{ page.title }}
         </h1>
       </b-container>
     </div>

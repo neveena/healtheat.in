@@ -42,6 +42,12 @@ import SocialMedia from '@/components/SocialMedia'
 export default {
   components: {
     SocialMedia
+  },
+  async asyncData ({ $content }) {
+    const page = await $content('about').fetch()
+    return {
+      page
+    }
   }
 }
 </script>

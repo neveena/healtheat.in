@@ -69,9 +69,9 @@ collections:
         name: 'about'
         file: 'content/about.json'
         fields:
-          - {label: Title, name: title, widget: string, required: true }
-          - {label: 'Intro heading', name: intro, widget: string}
-          - {label: 'Intro content', name: intro_content, widget: string}
+          - {label: Title, name: title, widget: string }
+          - {label: 'Intro heading', name: intro, widget: text }
+          - {label: 'Intro content', name: intro_content, widget: text }
           - label: Block
             name: block
             widget: list
