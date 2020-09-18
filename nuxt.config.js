@@ -54,11 +54,15 @@ export default {
     'bootstrap-vue/nuxt',
     '@nuxtjs/style-resources',
     '@nuxtjs/pwa',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/markdownit'
   ],
   bootstrapVue: {
     bootstrapCSS: false, // Or `css: false`
     bootstrapVueCSS: false // Or `bvCSS: false`
+  },
+  markdownit: {
+    injected: true
   },
   /*
   ** Build configuration

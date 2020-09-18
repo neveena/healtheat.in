@@ -67,7 +67,7 @@ collections:
           - {label: 'How it works section(paragraph 3)', name: how_it_works_para_3, widget: text, required: false }
       - label: 'About Page'
         name: 'about'
-        file: 'content/about.md'
+        file: 'content/about.json'
         fields:
           - {label: Title, name: title, widget: string }
           - {label: 'Intro heading', name: intro, widget: text }
