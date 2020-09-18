@@ -77,7 +77,7 @@ collections:
             widget: list
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: Content, name: content, widget: markdown, buttons: ['bold', 'italic', 'link', 'heading-four', 'heading-five', 'heading-six'], editor_components: []}
+              - {label: Content, name: content, widget: markdown, buttons: ['bold', 'italic', 'link'], editor_components: []}
       - label: 'Blog Page'
         name: 'blog_main'
         file: 'content/blog_main.json'
