@@ -30,7 +30,8 @@ collections:
       - {
           label: 'Image',
           name: 'large_image',
-          widget: 'image'
+          widget: 'image',
+          required: false,
         }
   - label: 'Pages'
     name: 'pages'
@@ -41,29 +42,29 @@ collections:
         name: 'home'
         file: 'content/home.json'
         fields:
-          - {label: 'Hero Title', name: title, widget: string, required: true}
-          - {label: 'Hero Subtitle', name: subtitle, widget: string, required: true }
-          - {label: 'Button Text', name: btn_text, widget: string}
-          - {label: 'Button Link', name: btn_link, widget: string}
-          - {label: 'Welcome section(img)', name: welcome_img, widget: image, required: true }
-          - {label: 'Welcome section(Title)', name: welcome_title, widget: string, required: true }
-          - {label: 'Welcome section(Subtitle)', name: welcome_subtitle, widget: string, required: true }
-          - {label: 'Welcome section(paragraph 1)', name: welcome_para_1, widget: text, required: true }
-          - {label: 'Welcome section(paragraph 2)', name: welcome_para_2, widget: text }
-          - {label: 'Welcome section(paragraph 3)', name: welcome_para_3, widget: text }
-          - {label: 'Product section(Title)', name: product_title, widget: string, required: true }
-          - {label: 'Product section(Subtitle)', name: product_subtitle, widget: string, required: true }
-          - {label: 'Gift section(img)', name: gift_img, widget: image, required: true }
-          - {label: 'Gift section(Title)', name: gift_title, widget: string, required: true }
-          - {label: 'Gift section(Subtitle)', name: gift_subtitle, widget: string, required: true }
-          - {label: 'Gift section(paragraph 1)', name: gift_para_1, widget: text, required: true }
-          - {label: 'Gift section(paragraph 2)', name: gift_para_2, widget: text }
-          - {label: 'How it works section(img)', name: how_it_works_img, widget: image, required: true }
-          - {label: 'How it works section(Title)', name: how_it_works_title, widget: string, required: true }
-          - {label: 'How it works section(Subtitle)', name: how_it_works_subtitle, widget: string, required: true }
-          - {label: 'How it works section(paragraph 1)', name: how_it_works_para_1, widget: text, required: true }
-          - {label: 'How it works section(paragraph 2)', name: how_it_works_para_2, widget: text }
-          - {label: 'How it works section(paragraph 3)', name: how_it_works_para_3, widget: text }
+          - {label: 'Hero Title', name: title, widget: string}
+          - {label: 'Hero Subtitle', name: subtitle, widget: string }
+          - {label: 'Button Text', name: btn_text, widget: string, default: 'Contact us', required: false }
+          - {label: 'Button Link', name: btn_link, widget: string, default: '/contact', required: false }
+          - {label: 'Welcome section(img)', name: welcome_img, widget: image }
+          - {label: 'Welcome section(Title)', name: welcome_title, widget: string }
+          - {label: 'Welcome section(Subtitle)', name: welcome_subtitle, widget: string }
+          - {label: 'Welcome section(paragraph 1)', name: welcome_para_1, widget: text }
+          - {label: 'Welcome section(paragraph 2)', name: welcome_para_2, widget: text, required: false }
+          - {label: 'Welcome section(paragraph 3)', name: welcome_para_3, widget: text, required: false }
+          - {label: 'Product section(Title)', name: product_title, widget: string }
+          - {label: 'Product section(Subtitle)', name: product_subtitle, widget: string }
+          - {label: 'Gift section(img)', name: gift_img, widget: image }
+          - {label: 'Gift section(Title)', name: gift_title, widget: string }
+          - {label: 'Gift section(Subtitle)', name: gift_subtitle, widget: string }
+          - {label: 'Gift section(paragraph 1)', name: gift_para_1, widget: text }
+          - {label: 'Gift section(paragraph 2)', name: gift_para_2, widget: text, required: false }
+          - {label: 'How it works section(img)', name: how_it_works_img, widget: image }
+          - {label: 'How it works section(Title)', name: how_it_works_title, widget: string }
+          - {label: 'How it works section(Subtitle)', name: how_it_works_subtitle, widget: string }
+          - {label: 'How it works section(paragraph 1)', name: how_it_works_para_1, widget: text }
+          - {label: 'How it works section(paragraph 2)', name: how_it_works_para_2, widget: text, required: false }
+          - {label: 'How it works section(paragraph 3)', name: how_it_works_para_3, widget: text, required: false }
       - label: 'About Page'
         name: 'about'
         file: 'content/about.json'
