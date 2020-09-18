@@ -208,6 +208,11 @@ import IconWhatsapp from '@/components/icons/Whatsapp'
 import SocialMedia from '@/components/SocialMedia'
 
 export default {
+  head() {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    };
+  },
   components: {
     SocialMedia,
     IconWhatsapp

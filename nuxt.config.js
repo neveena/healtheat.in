@@ -2,6 +2,7 @@ const { resolve } = require('path')
 
 export default {
   mode: 'universal',
+  target: 'static',
   /*
   ** Headers of the page
   */
@@ -52,7 +53,8 @@ export default {
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     '@nuxtjs/style-resources',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxt/content'
   ],
   bootstrapVue: {
     bootstrapCSS: false, // Or `css: false`
