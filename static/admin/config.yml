@@ -77,7 +77,7 @@ collections:
             widget: list
             fields:
               - {label: Title, name: title, widget: string}
-              - {label: Content, name: content, widget: string}
+              - {label: Content, name: content, widget: text}
       - label: 'Blog Page'
         name: 'blog_main'
         file: 'content/blog_main.json'
