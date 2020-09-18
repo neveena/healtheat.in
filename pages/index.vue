@@ -165,7 +165,9 @@
             </div>
           </b-col>
           <b-col md="6">
-            <img src="/img/gift-box.jpg">
+            <div class="image-wrapper">
+              <img src="/img/gift-box.jpg">
+            </div>
           </b-col>
         </b-row>
       </b-container>
@@ -175,7 +177,9 @@
       <b-container>
         <b-row class="align-items-center">
           <b-col md="6">
-            <img src="/img/how-does-it-work.jpg">
+            <div class="image-wrapper">
+              <img src="/img/how-does-it-work.jpg">
+            </div>
           </b-col>
 
           <b-col md="6">
@@ -313,8 +317,10 @@ export default {
 }
 
 .introduction {
-  padding: 70px 0;
-
+  padding: 40px 0;
+  @include media-breakpoint-up(lg) {
+    padding: 70px 0;
+  }
   img {
     display: none;
 
@@ -328,8 +334,11 @@ export default {
 }
 
 .product-category {
-  padding: 70px 0;
+  padding: 40px 0;
   background-color: #f6f6f6;
+  @include media-breakpoint-up(lg) {
+    padding: 70px 0;
+  }
   .card {
     height: 100%;
     .image-wrapper {
@@ -374,18 +383,35 @@ export default {
 }
 
 .gift-box {
-  padding: 60px 0 30px;
+  padding: 40px 0;
   text-align: center;
   @include media-breakpoint-up(md) {
     text-align: left;
   }
+
+  @include media-breakpoint-up(lg) {
+    padding: 60px 0 30px;
+  }
+
+  .image-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }
 
 .how-it-works {
-  padding: 40px 0 90px;
+  padding: 40px 0 60px;
   text-align: center;
   @include media-breakpoint-up(md) {
     text-align: left;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 40px 0 90px;
+  }
+
+  .image-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
   }
 }
 
