@@ -50,7 +50,7 @@ export default {
 .jumbotron {
   color: white;
   background-color: $primary;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url('/img/bg.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url('/img/bg2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

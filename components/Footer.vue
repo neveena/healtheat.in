@@ -45,7 +45,7 @@
             <span>Copyright © {{ getYear }}, All Right Reserved HealthEat.in</span>
           </div>
           <div class="col-md-6 text-right">
-            <span><a href="http://neveenaferrao.netlify.app/" target="_blank">Designed by: neveena</a></span>
+            <span><a href="http://neveenaferrao.netlify.app/" target="_blank">Developed by: Neveena</a></span>
           </div>
         </div>
       </div>

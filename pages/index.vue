@@ -52,7 +52,7 @@
           <b-col md="6" lg="4" class="mb-5">
             <div class="card">
               <div class="image-wrapper">
-                <img class="card-img-top" src="/img/product/nuts.webp" alt="Nuts & Dried fruits">
+                <img class="card-img-top" src="/img/product/nuts.jpg" alt="Nuts & Dried fruits">
               </div>
               <div class="card-body">
                 <h5 class="card-title">
@@ -208,14 +208,14 @@ import IconWhatsapp from '@/components/icons/Whatsapp'
 import SocialMedia from '@/components/SocialMedia'
 
 export default {
-  head() {
-    return {
-      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
-    };
-  },
   components: {
     SocialMedia,
     IconWhatsapp
+  },
+  head () {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }]
+    }
   }
 }
 </script>
@@ -224,7 +224,7 @@ export default {
 .jumbotron {
   color: white;
   background-color: $primary;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url('/img/bg.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url('/img/bg1.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
