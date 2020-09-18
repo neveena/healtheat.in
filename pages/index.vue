@@ -233,7 +233,7 @@ export default {
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  padding: 89px 0 70px;
+  padding: 90px 0 70px;
   @include media-breakpoint-up(lg) {
     min-height: 440px;
     height: 70vh;

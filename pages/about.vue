@@ -114,7 +114,7 @@ p {
   text-align: center;
   padding: 30px 0;
   @include media-breakpoint-up(lg) {
-    padding: 30px 0 70px;
+    padding: 30px 0 40px;
   }
   .content {
     font-size: 17px;
