@@ -14,19 +14,22 @@
 
           <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav class="ml-auto">
-              <b-nav-item to="/">
+              <b-nav-item to="/" @click="navOpen = false">
                 Home
               </b-nav-item>
-              <b-nav-item to="/about">
+              <b-nav-item to="/about" @click="navOpen = false">
                 About
               </b-nav-item>
-              <b-nav-item to="/recipes">
+              <b-nav-item to="/recipes" @click="navOpen = false">
                 Recipes
               </b-nav-item>
-              <b-nav-item to="/blog">
+              <b-nav-item to="/blog" @click="navOpen = false">
                 Blog
               </b-nav-item>
-              <b-nav-item to="/contact">
+              <b-nav-item to="/offers" @click="navOpen = false">
+                Offers
+              </b-nav-item>
+              <b-nav-item to="/contact" @click="navOpen = false">
                 Contact us
               </b-nav-item>
             </b-navbar-nav>
@@ -73,6 +76,7 @@ export default {
     left: 0;
     transition: all 0.5s linear;
     padding-bottom: 25px;
+    z-index: 10;
 
     @include media-breakpoint-up(lg) {
       padding-bottom: 0;
