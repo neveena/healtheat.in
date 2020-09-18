@@ -20,9 +20,11 @@
                   {{ post.title }}
                 </h5>
                 <p class="card-text">
-                   {{ post.description }}
+                  {{ post.description }}
                 </p>
-                <nuxt-link :to="{ name: 'blog-detail', params: { detail: post.slug }}" class="link">Read more</nuxt-link>
+                <nuxt-link :to="{ name: 'blog-detail', params: { detail: post.slug }}" class="link">
+                  Read more
+                </nuxt-link>
               </div>
             </div>
           </b-col>

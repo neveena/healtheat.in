@@ -2,11 +2,13 @@
   <div class="content">
     <b-container>
       <h1>{{ post.title }}</h1>
-      <p class="font-weight-bold">Published Date: <time :datetime="post.date">{{ formatDate }}</time></p>
+      <p class="font-weight-bold">
+        Published Date: <time :datetime="post.date">{{ formatDate }}</time>
+      </p>
       <div v-if="post.large_image">
         <img :src="post.large_image" class="img-fluid rounded">
       </div>
-      <div v-html="post.body" class="mt-4 detail" />
+      <div class="mt-4 detail" v-html="post.body" />
     </b-container>
   </div>
 </template>
