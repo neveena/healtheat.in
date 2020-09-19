@@ -28,7 +28,10 @@
             <a href="tel:9886090888">9886090888</a>/<a href="mailto:Hello@healtheat.in">Hello@healtheat.in</a>
             <h4>Hours</h4>
             <div v-b-toggle.collapse-1 variant="primary" class="hours">
-              Open today <span class="time">{{ getTodayOpeningHours[0].label }}</span>
+              <span v-if="getTodayOpeningHours[0].value != 6 && getTodayOpeningHours[0].value != 6">
+                Open today <span class="time">{{ getTodayOpeningHours[0].label }}</span>
+              </span>
+              <span v-else>Closed</span>
               <img src="/down-chevron.svg" width="15px" class="ml-3">
             </div>
             <b-collapse id="collapse-1" class="mt-2">
