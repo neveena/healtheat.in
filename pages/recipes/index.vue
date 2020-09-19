@@ -7,6 +7,30 @@
         </h1>
       </b-container>
     </div>
+    <div class="recipe-list">
+      <b-container>
+        <b-row>
+          <b-col md="6">
+            <div class="card mb-4">
+              <div class="card-block">
+                <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="link">Read More</a>
+              </div>
+            </div>
+          </b-col>
+          <b-col md="6">
+            <div class="card mb-4">
+              <div class="card-block">
+                <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
+                <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#" class="link">Read More</a>
+              </div>
+            </div>
+          </b-col>
+        </b-row>
+      </b-container>
+    </div>
   </div>
 </template>
 
@@ -48,4 +72,26 @@ export default {
     }
   }
 }
+.recipe-list {
+  padding: 40px 0;
+  @include media-breakpoint-up(lg) {
+    padding: 70px 0;
+  }
+  .card-title {
+    margin-bottom: 5px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  .card-block {
+    padding: 20px;
+  }
+  .link {
+    color: $secondary;
+    font-weight: 700;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+}
+
 </style>
