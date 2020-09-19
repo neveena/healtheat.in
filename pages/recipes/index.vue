@@ -13,8 +13,12 @@
           <b-col md="6">
             <div class="card mb-4">
               <div class="card-block">
-                <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h4 class="card-title">
+                  Lorem ipsum dolor sit amet
+                </h4>
+                <p class="card-text">
+                  Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
                 <a href="#" class="link">Read More</a>
               </div>
             </div>
@@ -22,8 +26,12 @@
           <b-col md="6">
             <div class="card mb-4">
               <div class="card-block">
-                <h4 class="card-title">Lorem ipsum dolor sit amet</h4>
-                <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <h4 class="card-title">
+                  Lorem ipsum dolor sit amet
+                </h4>
+                <p class="card-text">
+                  Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
                 <a href="#" class="link">Read More</a>
               </div>
             </div>
