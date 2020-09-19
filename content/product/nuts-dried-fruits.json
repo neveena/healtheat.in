@@ -1,0 +1,12 @@
+{
+  "title": "Nuts & Dried fruits",
+  "description": "Organically sourced and procured from the origin.",
+  "Items": [
+    {
+      "title": "Cashew",
+      "description": "With each serving of cashews, you harness incredible health benefits that set them apart from other nuts",
+      "thumbnail": "/img/shelled-cashew-kernels.jpg"
+    }
+  ],
+  "thumbnail": "/img/bg2.jpg"
+}
