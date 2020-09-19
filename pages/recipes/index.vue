@@ -58,7 +58,6 @@ export default {
 
   @include media-breakpoint-up(lg) {
     padding: 120px 0 90px;
-    background-attachment: fixed;
   }
   h1 {
     @include media-breakpoint-up(lg) {
