@@ -46,7 +46,7 @@ export default {
   color: white;
   background-color: $primary;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 100%), url('/img/bg3.jpg');
-  background-position: bottom center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
