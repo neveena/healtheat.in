@@ -31,7 +31,7 @@
               <span v-if="getTodayOpeningHours[0].value != 6 && getTodayOpeningHours[0].value != 6">
                 Open today <span class="time">{{ getTodayOpeningHours[0].label }}</span>
               </span>
-              <span v-else>Closed</span>
+              <span v-else class="time">Closed today</span>
               <img src="/down-chevron.svg" width="15px" class="ml-3">
             </div>
             <b-collapse id="collapse-1" class="mt-2">

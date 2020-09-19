@@ -33,6 +33,26 @@ collections:
           widget: 'image',
           required: false,
         }
+  - name: 'product'
+    label: 'Product'
+    format: 'json'
+    folder: 'content/product'
+    create: true
+    sort: 'date:desc'
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Brief Description', name: 'description', widget: 'string' }
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+      - label: Items
+        name: Items
+        widget: list
+        fields:
+          - {label: Title, name: title, widget: string}
+          - { label: 'Brief Description', name: 'description', widget: 'string' }
+          - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
   - label: 'Pages'
     name: 'pages'
     editor:
